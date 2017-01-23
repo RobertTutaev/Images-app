@@ -1,8 +1,8 @@
-drop database if exists test_app;
+drop database if exists images_app;
 
-create database if not exists test_app;
+create database if not exists images_app;
 
-use test_app;
+use images_app;
 
 drop table if exists users;
 
