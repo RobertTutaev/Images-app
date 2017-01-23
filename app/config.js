@@ -13,8 +13,8 @@ var config = {
         connection: {
             host     : '127.0.0.1',
             user     : 'root',
-            password : 'electric@000',
-            database : 'test_app',
+            password : 'password',
+            database : 'images_app',
             charset  : 'utf8'
         }
     },
