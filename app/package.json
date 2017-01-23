@@ -1,0 +1,27 @@
+{
+  "name": "images-app",
+  "version": "1.0.0",
+  "author": "Robert Tutaev",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+      "express": "4.x",
+      "body-parser": "*",
+      "cookie-parser": "*",
+      "express-session": "*",
+      "bcrypt-nodejs": "*",
+      "passport": "*",
+      "passport-local": "*",
+      "mysql": "*",
+      "bookshelf": "*",
+      "debug": "~2.2.0",
+      "jade": "~1.11.0",
+      "morgan": "~1.6.1",
+      "multer": "*",
+      "socket.io": "*",
+      "socket.io-client": "*",
+      "http": "*"
+  }
+}

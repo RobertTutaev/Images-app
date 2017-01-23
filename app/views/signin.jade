@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  h1= title  
+
+  div
+  form(action='/signin', method='post')
+    label Логин
+    br
+    input(type='text', name='username', placeholder='Логин', required='true')
+    br
+    label Пароль
+    br
+    input(type='password', name='password', placeholder='Пароль', required='true')
+    br
+    br
+    input(type='submit', value='Войти')
+    | 
+    a(href='/signup')='Регистрация'
+    br
+    br
+    b 
+      | #{typeof(errorMessage) !== 'undefined' ? errorMessage : ''}

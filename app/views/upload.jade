@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  h1= title  
+
+  div
+  form(action='/upload', method='post', enctype='multipart/form-data')    
+    input(type='file', name='image', id='image', accept='image', required)
+    br
+    label *только изображение
+    br
+    br
+    label Комментарий
+    br
+    textarea(name='comment', id='comment')
+    br
+    br
+    input(type='submit', value='Загрузить')
+    | 
+    a(href='/')='Отмена'
+    br
+    br
+    b 
+      | #{typeof(errorMessage) !== 'undefined' ? errorMessage : ''}

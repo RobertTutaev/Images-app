@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  h1= title
+  
+  div
+    p
+      b
+        | Привет #{username}
+    p
+      if(!username)
+        a(href='/signin')= "Вход"
+      else
+        | Выберите:
+        ul
+          li
+            a(href='/upload')= "Загрузка изображения"
+          if(is_admin)
+            li
+              a(href='/show')= "Просмотр изображений"
+        a(href='/signout')= "Выход"
